@@ -1,10 +1,11 @@
 import React from 'react'
 import {SafeAreaView, Text} from 'react-native'
-
+import {NavigationContainer} from '@react-navigation/native'
+import {BottomTabNavigator} from './navigation'
 export const App = () => {
   return (
-    <SafeAreaView>
-      <Text>START DEVELOPING</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <BottomTabNavigator />
+    </NavigationContainer>
   )
 }
