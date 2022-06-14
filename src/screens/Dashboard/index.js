@@ -1,12 +1,15 @@
 import React from 'react'
-import { Text } from 'react-native'
-import { ScreenWrapper } from '../../components/ScreenWrapper'
+import {Text, View} from 'react-native'
+import {CustomCardsCarousel, ScreenWrapper} from '../../components'
 
 export const DashboardScreen = () => {
-
-    return (
-        <ScreenWrapper>
-            <Text style={{ justifyContent: 'center', alignItems: 'center' }}>Dashboard</Text>
-        </ScreenWrapper>
-    )
+  return (
+    <ScreenWrapper>
+      <CustomCardsCarousel />
+      <View
+        style={{height: 500, alignItems: 'center', justifyContent: 'center'}}>
+        <Text>Card's Information</Text>
+      </View>
+    </ScreenWrapper>
+  )
 }

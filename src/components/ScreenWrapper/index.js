@@ -2,8 +2,8 @@ import React from 'react'
 import {View, SafeAreaView} from 'react-native'
 import {styles} from './styles'
 
-export const ScreenWrapper = ({children, wrapperStyle}) => (
+export const ScreenWrapper = ({children}) => (
   <SafeAreaView style={styles.container}>
-    <View style={[styles.childrenWrapper, wrapperStyle]}>{children}</View>
+    <View style={styles.childrenWrapper}>{children}</View>
   </SafeAreaView>
 )
